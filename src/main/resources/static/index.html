@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <title>spring-boot-mvc-example</title>
+    <meta charset="UTF-8">
+    <style>
+      .inline {
+        display: inline-block;
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      ul, li, a, span {
+        font-size: 30px;
+      }
+    </style>
+
+  </head>
+
+  <body style="font-family: sans-serif">
+
+    <h1 class="inline">
+      <span style="color:rgb(33, 112, 2);" class="inline">spring-</span><!--
+      --><span style="color:rgb(19, 74, 158);" class="inline">boot-</span><!--
+      --><span style="color:rgb(189, 93, 3);" class="inline">mvc-</span><!--
+      --><span style="color:rgb(29, 29, 29);" class="inline">example</span>
+    </h1>
+
+    <h2 style="color:rgb(33, 112, 2);">Currency service</h2>
+    <ul>
+      <li><a href="/currency">/currency</a> ➞ <span style="color:green;">[75.3498]</span></li>
+      <li><a href="/currency?n=5">/currency?n=5</a> ➞ <span style="color:green;">[75.3498,74.6721,73.3155,73.3155,73.3155]</span></li>
+    </ul>
+
+    <h2 style="color:rgb(19, 74, 158);">Weather service</h2>
+    <ul style="color:rgb(14, 63, 136);">
+      <li><a href="/weather">/weather</a> ➞ <span style="color:green;">[-7.4]</span></li>
+      <li><a href="/weather?n=5">/weather?n=5</a> ➞ <span style="color:green;">[-7.4,-3.3,0.6,-5.3,-5.9]</span></li>
+      <li><a href="/weather?city=London">/weather?city=London</a> ➞ <span style="color:green;">[11.4]</span></li>
+      <li><a href="/weather?n=5&city=London">/weather?n=5&city=London</a> ➞ <span style="color:green;">[11.4,11.2,11.3,9.0,10.9]</span></li>
+    </ul>
+    
+    <h2 style="color:rgb(189, 93, 3);">Predict service</h2>
+    <ul style="color:rgb(158, 78, 3);">
+      <li><a href="/predict">/predict</a> ➞ <span style="color:green;">74.38910625762495</span></li>
+    </ul>
+
+  </body>
+</html>
